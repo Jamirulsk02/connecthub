@@ -1,0 +1,235 @@
+/* ==========================
+   CONNECTHUB AUTH PAGE
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#2563eb,#7c3aed);
+    overflow:hidden;
+}
+
+/* Background Glow */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#2563eb;
+    border-radius:50%;
+    top:-150px;
+    left:-150px;
+    filter:blur(120px);
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#9333ea;
+    border-radius:50%;
+    bottom:-150px;
+    right:-150px;
+    filter:blur(120px);
+}
+
+/* Card */
+
+.container{
+
+    position:relative;
+    z-index:10;
+
+    width:430px;
+    max-width:92%;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.30);
+
+}
+
+/* Heading */
+
+.container h2{
+
+    color:#fff;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+/* Inputs */
+
+.container input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.container input:focus{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 15px rgba(37,99,235,.4);
+
+}
+
+/* Button */
+
+.container button{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.container button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+
+}
+
+/* Message */
+
+#message{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:#22c55e;
+
+    font-weight:600;
+
+    min-height:20px;
+
+}
+
+/* Login Text */
+
+.login-text{
+
+    text-align:center;
+
+    color:#fff;
+
+    margin-top:25px;
+
+}
+
+.login-text a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+.login-text a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+.container{
+
+    width:95%;
+
+    padding:30px;
+
+}
+
+.container h2{
+
+    font-size:28px;
+
+}
+
+.container input{
+
+    padding:14px;
+
+}
+
+.container button{
+
+    padding:14px;
+
+}
+
+}

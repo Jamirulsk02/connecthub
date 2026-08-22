@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ConnectHub</title>
+
+<link rel="stylesheet" href="css/feed.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>ConnectHub</h2>
+</div>
+
+<div class="search-box">
+<input type="text" placeholder="Search ConnectHub">
+</div>
+
+<div class="nav-icons">
+
+<i class="fas fa-house"></i>
+
+<i class="fas fa-user-group"></i>
+
+<i class="fas fa-bell"></i>
+
+<i class="fas fa-message"></i>
+
+<img src="images/profile.png"
+class="profile-img">
+
+</div>
+
+</nav>
+
+<!-- Main Layout -->
+
+<div class="main-container">
+
+<!-- Left Sidebar -->
+
+<div class="left-sidebar">
+
+<div class="menu-item">
+<i class="fas fa-user"></i>
+<span>Profile</span>
+</div>
+
+<div class="menu-item">
+<i class="fas fa-user-group"></i>
+<span>Friends</span>
+</div>
+
+<div class="menu-item">
+<i class="fas fa-bookmark"></i>
+<span>Saved</span>
+</div>
+
+<div class="menu-item">
+<i class="fas fa-clock"></i>
+<span>Memories</span>
+</div>
+
+<div class="menu-item">
+<i class="fas fa-gear"></i>
+<span>Settings</span>
+</div>
+
+</div>
+
+<!-- Feed -->
+
+<div class="feed">
+
+<!-- Create Post -->
+
+<div class="create-post">
+
+<textarea
+id="postText"
+placeholder="What's on your mind?"></textarea>
+
+<button id="postBtn">
+Post
+</button>
+
+</div>
+
+<!-- Posts -->
+
+<div id="posts"></div>
+
+</div>
+
+<!-- Right Sidebar -->
+
+<div class="right-sidebar">
+
+<h3>Contacts</h3>
+
+<div class="contact">
+
+<img src="images/profile.png">
+
+<span>Jamirul</span>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="js/feed.js"></script>
+
+</body>
+
+</html>

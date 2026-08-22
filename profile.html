@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | ConnectHub</title>
+
+<link rel="stylesheet" href="css/profile.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+<div class="logo">
+<h2>ConnectHub</h2>
+</div>
+
+<div class="nav-links">
+
+<a href="feed.html">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+<a href="profile.html" class="active">
+<i class="fa-solid fa-user"></i>
+Profile
+</a>
+
+<a href="#">
+<i class="fa-solid fa-bell"></i>
+Notifications
+</a>
+
+<a href="#">
+<i class="fa-solid fa-message"></i>
+Messages
+</a>
+
+</div>
+
+</header>
+
+<!-- Cover -->
+
+<section class="cover-section">
+
+<img
+src="images/default-cover.jpg"
+class="cover-photo">
+
+<div class="profile-card">
+
+<img
+src="images/default-profile.png"
+class="profile-photo"
+id="profilePhoto">
+
+<button id="changePhoto">
+<i class="fa-solid fa-camera"></i>
+</button>
+
+<h2 id="userName">
+Loading...
+</h2>
+
+<p id="userEmail">
+Loading...
+</p>
+
+<p id="userBio">
+Welcome to ConnectHub.
+</p>
+
+<button id="editProfile">
+Edit Profile
+</button>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat">
+<h3 id="postCount">0</h3>
+<p>Posts</p>
+</div>
+
+<div class="stat">
+<h3 id="friendCount">0</h3>
+<p>Friends</p>
+</div>
+
+<div class="stat">
+<h3 id="followers">0</h3>
+<p>Followers</p>
+</div>
+
+<div class="stat">
+<h3 id="following">0</h3>
+<p>Following</p>
+</div>
+
+</section>
+
+<!-- Tabs -->
+
+<section class="tabs">
+
+<button class="tab active">
+Posts
+</button>
+
+<button class="tab">
+Photos
+</button>
+
+<button class="tab">
+Videos
+</button>
+
+<button class="tab">
+About
+</button>
+
+</section>
+
+<!-- Posts -->
+
+<section class="posts">
+
+<div class="empty-post">
+
+<i class="fa-solid fa-image"></i>
+
+<h3>No Posts Yet</h3>
+
+<p>Create your first post from the Home page.</p>
+
+<a href="feed.html">
+Go to Feed
+</a>
+
+</div>
+
+</section>
+
+<script type="module" src="js/profile.js"></script>
+
+</body>
+
+</html>
